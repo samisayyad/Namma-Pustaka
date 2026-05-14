@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing Scale -->
+    <dimen name="space_2">2dp</dimen>
+    <dimen name="space_4">4dp</dimen>
+    <dimen name="space_8">8dp</dimen>
+    <dimen name="space_12">12dp</dimen>
+    <dimen name="space_16">16dp</dimen>
+    <dimen name="space_20">20dp</dimen>
+    <dimen name="space_24">24dp</dimen>
+    <dimen name="space_32">32dp</dimen>
+    <dimen name="space_40">40dp</dimen>
+    <dimen name="space_48">48dp</dimen>
+    <dimen name="space_64">64dp</dimen>
+
+    <!-- Corner Radii -->
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_medium">16dp</dimen>
+    <dimen name="radius_large">24dp</dimen>
+    <dimen name="radius_xlarge">32dp</dimen>
+    <dimen name="radius_round">100dp</dimen>
+
+    <!-- Card Dimensions -->
+    <dimen name="card_book_width">140dp</dimen>
+    <dimen name="card_book_height">210dp</dimen>
+    <dimen name="card_book_cover_height">160dp</dimen>
+    <dimen name="card_featured_height">200dp</dimen>
+    <dimen name="card_category_size">90dp</dimen>
+    <dimen name="card_leaderboard_height">72dp</dimen>
+
+    <!-- FAB -->
+    <dimen name="fab_size">56dp</dimen>
+    <dimen name="fab_mini_size">40dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <!-- Bottom Nav -->
+    <dimen name="bottom_nav_height">72dp</dimen>
+
+    <!-- Icon sizes -->
+    <dimen name="icon_small">16dp</dimen>
+    <dimen name="icon_medium">24dp</dimen>
+    <dimen name="icon_large">32dp</dimen>
+    <dimen name="icon_xlarge">48dp</dimen>
+    <dimen name="icon_hero">96dp</dimen>
+
+    <!-- Avatar sizes -->
+    <dimen name="avatar_small">36dp</dimen>
+    <dimen name="avatar_medium">48dp</dimen>
+    <dimen name="avatar_large">80dp</dimen>
+    <dimen name="avatar_xlarge">120dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="text_xs">10sp</dimen>
+    <dimen name="text_sm">12sp</dimen>
+    <dimen name="text_base">14sp</dimen>
+    <dimen name="text_md">16sp</dimen>
+    <dimen name="text_lg">18sp</dimen>
+    <dimen name="text_xl">22sp</dimen>
+    <dimen name="text_2xl">28sp</dimen>
+    <dimen name="text_3xl">34sp</dimen>
+    <dimen name="text_hero">48sp</dimen>
+
+    <!-- QR Scanner -->
+    <dimen name="qr_scan_area">260dp</dimen>
+    <dimen name="qr_corner_length">30dp</dimen>
+    <dimen name="qr_corner_stroke">4dp</dimen>
+
+    <!-- Chat -->
+    <dimen name="chat_input_height">56dp</dimen>
+    <dimen name="chat_bubble_max_width_fraction">0.75</dimen>
+    <dimen name="chat_avatar_size">36dp</dimen>
+
+    <!-- Shimmer -->
+    <dimen name="shimmer_book_height">180dp</dimen>
+    <dimen name="shimmer_book_width">120dp</dimen>
+
+    <!-- Elevation -->
+    <dimen name="elevation_card">2dp</dimen>
+    <dimen name="elevation_fab">6dp</dimen>
+    <dimen name="elevation_modal">16dp</dimen>
+    <dimen name="elevation_top_bar">4dp</dimen>
+
+    <!-- Onboarding -->
+    <dimen name="onboarding_lottie_size">280dp</dimen>
+    <dimen name="onboarding_indicator_size">8dp</dimen>
+    <dimen name="onboarding_indicator_selected_width">24dp</dimen>
+</resources>

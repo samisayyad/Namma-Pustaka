@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namma Pustaka</string>
+    <string name="app_tagline">Your AI-Powered Smart Library</string>
+    <string name="app_tagline_kannada">ನಮ್ಮ ಪುಸ್ತಕ - ಬುದ್ಧಿವಂತ ಗ್ರಂಥಾಲಯ</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_1_title">Discover Books</string>
+    <string name="onboarding_1_desc">Explore thousands of books curated for your school library. Find what you love.</string>
+    <string name="onboarding_2_title">AI Librarian</string>
+    <string name="onboarding_2_desc">Ask our AI assistant anything. Get summaries, recommendations, and insights instantly.</string>
+    <string name="onboarding_3_title">Track &amp; Learn</string>
+    <string name="onboarding_3_desc">Monitor your reading journey, earn badges, and climb the leaderboard with your friends.</string>
+    <string name="get_started">Get Started</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+
+    <!-- Auth -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="email_hint">Email Address</string>
+    <string name="password_hint">Password</string>
+    <string name="name_hint">Full Name</string>
+    <string name="school_id_hint">School ID</string>
+    <string name="login_as_student">Login as Student</string>
+    <string name="login_as_teacher">Login as Teacher</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="no_account">Don\'t have an account? </string>
+    <string name="have_account">Already have an account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="google_sign_in">Sign in with Google</string>
+
+    <!-- Home -->
+    <string name="good_morning">Good Morning</string>
+    <string name="good_afternoon">Good Afternoon</string>
+    <string name="good_evening">Good Evening</string>
+    <string name="continue_reading">Continue Reading</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="trending_now">Trending Now</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="categories">Categories</string>
+    <string name="see_all">See All</string>
+    <string name="books_borrowed">Books Borrowed</string>
+    <string name="reading_streak">Reading Streak</string>
+    <string name="rank">Rank</string>
+    <string name="days">days</string>
+
+    <!-- Catalog -->
+    <string name="search_books">Search books, authors…</string>
+    <string name="all_books">All Books</string>
+    <string name="fiction">Fiction</string>
+    <string name="science">Science</string>
+    <string name="history">History</string>
+    <string name="mathematics">Mathematics</string>
+    <string name="literature">Literature</string>
+    <string name="biography">Biography</string>
+    <string name="technology">Technology</string>
+    <string name="kannada">Kannada</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="available">Available</string>
+    <string name="unavailable">Borrowed</string>
+
+    <!-- Book Detail -->
+    <string name="borrow_book">Borrow Book</string>
+    <string name="return_book">Return Book</string>
+    <string name="ai_summary">AI Summary</string>
+    <string name="ai_summary_kannada">AI ಸಾರಾಂಶ</string>
+    <string name="reviews">Reviews</string>
+    <string name="add_review">Add Review</string>
+    <string name="about_book">About this Book</string>
+    <string name="author">Author</string>
+    <string name="genre">Genre</string>
+    <string name="pages">Pages</string>
+    <string name="published">Published</string>
+    <string name="isbn">ISBN</string>
+    <string name="add_to_favorites">Add to Favorites</string>
+    <string name="share">Share</string>
+
+    <!-- QR Scanner -->
+    <string name="qr_scanner_title">QR Scanner</string>
+    <string name="qr_scan_instruction">Point camera at the book\'s QR code</string>
+    <string name="scan_to_borrow">Scan to Borrow</string>
+    <string name="scan_to_return">Scan to Return</string>
+    <string name="scanning">Scanning…</string>
+    <string name="book_found">Book Found!</string>
+    <string name="confirm_borrow">Confirm Borrow</string>
+    <string name="confirm_return">Confirm Return</string>
+
+    <!-- Chat -->
+    <string name="ai_librarian">AI Librarian</string>
+    <string name="ai_greeting">Hello! I\'m Pustaka, your AI library assistant. How can I help you today?</string>
+    <string name="type_message">Type a message…</string>
+    <string name="voice_input">Voice Input</string>
+    <string name="ai_thinking">Thinking…</string>
+
+    <!-- Leaderboard -->
+    <string name="leaderboard">Leaderboard</string>
+    <string name="top_readers">Top Readers</string>
+    <string name="this_month">This Month</string>
+    <string name="all_time">All Time</string>
+    <string name="books_read">books read</string>
+    <string name="your_rank">Your Rank</string>
+
+    <!-- Profile -->
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="achievements">Achievements</string>
+    <string name="reading_history">Reading History</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="logout">Logout</string>
+    <string name="class_grade">Class / Grade</string>
+    <string name="total_books_read">Total Books Read</string>
+    <string name="current_streak">Current Streak</string>
+    <string name="badges_earned">Badges Earned</string>
+
+    <!-- Teacher Dashboard -->
+    <string name="teacher_dashboard">Teacher Dashboard</string>
+    <string name="add_book">Add Book</string>
+    <string name="manage_books">Manage Books</string>
+    <string name="active_borrows">Active Borrows</string>
+    <string name="overdue_books">Overdue Books</string>
+    <string name="student_activity">Student Activity</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="total_books">Total Books</string>
+    <string name="total_students">Total Students</string>
+    <string name="books_issued_today">Issued Today</string>
+    <string name="books_returned_today">Returned Today</string>
+
+    <!-- Analytics -->
+    <string name="analytics">Analytics</string>
+    <string name="reading_trends">Reading Trends</string>
+    <string name="popular_genres">Popular Genres</string>
+    <string name="monthly_activity">Monthly Activity</string>
+    <string name="student_engagement">Student Engagement</string>
+
+    <!-- Settings -->
+    <string name="dark_mode">Dark Mode</string>
+    <string name="language">Language</string>
+    <string name="notifications_settings">Notifications</string>
+    <string name="about">About</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="version">Version</string>
+
+    <!-- Common -->
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="done">Done</string>
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="empty_state_books">No books found</string>
+    <string name="empty_state_desc">Try a different search or browse categories</string>
+    <string name="school_id">School ID</string>
+    <string name="class_label">Class</string>
+    <string name="points">Points</string>
+    <string name="streak_label">Streak</string>
+    <string name="no_reviews_yet">No reviews yet. Be the first!</string>
+    <string name="no_books_borrowed">You haven\'t borrowed any books yet</string>
+    <string name="ai_powered">AI Powered</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="camera_permission_needed">Camera permission is required to scan QR codes</string>
+    <string name="notification_channel_name">Namma Pustaka</string>
+    <string name="notification_channel_desc">Library notifications and reminders</string>
+</resources>

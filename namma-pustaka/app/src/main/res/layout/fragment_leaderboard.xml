@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <!-- Header -->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_primary"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="48dp"
+            android:paddingBottom="0dp"
+            android:paddingHorizontal="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/leaderboard"
+                android:textSize="26sp"
+                android:fontFamily="@font/poppins_bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/top_readers"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_regular"
+                android:textColor="#CCE5DEFF" />
+
+            <!-- Period Tabs -->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                app:tabTextColor="#AAFFFFFF"
+                app:tabSelectedTextColor="#FFFFFF"
+                app:tabIndicatorColor="#FFFFFF"
+                app:tabIndicatorHeight="3dp"
+                app:tabIndicatorGravity="bottom"
+                app:tabBackground="@android:color/transparent"
+                app:tabTextAppearance="@style/TextAppearance.NammaPustaka.TitleMedium">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/this_month" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/all_time" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="88dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Top 3 Podium -->
+            <LinearLayout
+                android:id="@+id/podiumLayout"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:gravity="bottom|center_horizontal"
+                android:paddingHorizontal="24dp"
+                android:paddingBottom="0dp"
+                android:background="@drawable/bg_gradient_primary">
+
+                <!-- 2nd Place -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="0dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivRank2"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/ic_avatar_placeholder"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="@color/silver" />
+
+                    <TextView
+                        android:id="@+id/tvRank2Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Priya"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/silver"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textSize="28sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 1st Place -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginBottom="0dp">
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieCrown"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:lottie_rawRes="@raw/anim_crown"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivRank1"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/ic_avatar_placeholder"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="@color/gold" />
+
+                    <TextView
+                        android:id="@+id/tvRank1Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Arjun"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/gold"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textSize="34sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 3rd Place -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivRank3"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        android:src="@drawable/ic_avatar_placeholder"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="@color/bronze" />
+
+                    <TextView
+                        android:id="@+id/tvRank3Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sneha"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginTop="4dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:background="@color/bronze"
+                        android:layout_marginTop="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:textColor="#FFFFFF" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Your Rank Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMyRank"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp"
+                app:cardBackgroundColor="#EDE8FF"
+                app:strokeColor="?attr/colorPrimary"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:text="#5"
+                        android:textSize="16sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="?attr/colorPrimary"
+                        android:gravity="center"
+                        android:background="?attr/colorPrimaryContainer"
+                        android:padding="6dp" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivMyAvatar"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_avatar_placeholder"
+                        android:layout_marginStart="12dp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="?attr/colorPrimary" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:id="@+id/tvMyName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You"
+                            android:textSize="15sp"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:textColor="?attr/colorOnSurface" />
+
+                        <TextView
+                            android:id="@+id/tvMyBooksRead"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="18 books read"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="?attr/colorPrimary" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_rank"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="?attr/colorPrimary" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Full List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvLeaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

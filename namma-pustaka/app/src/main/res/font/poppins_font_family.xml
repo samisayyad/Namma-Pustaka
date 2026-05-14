@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Font Family Declaration for Poppins.
+  Download the following .ttf files from https://fonts.google.com/specimen/Poppins
+  and place them in res/font/:
+    - poppins_regular.ttf
+    - poppins_medium.ttf
+    - poppins_semibold.ttf  (SemiBold weight 600)
+    - poppins_bold.ttf
+
+  Then reference individual fonts as: @font/poppins_regular, @font/poppins_bold, etc.
+  Or use this family file as: @font/poppins_font_family
+-->
+<font-family xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <font
+        android:font="@font/poppins_regular"
+        android:fontWeight="400"
+        android:fontStyle="normal"
+        app:font="@font/poppins_regular"
+        app:fontWeight="400"
+        app:fontStyle="normal" />
+
+    <font
+        android:font="@font/poppins_medium"
+        android:fontWeight="500"
+        android:fontStyle="normal"
+        app:font="@font/poppins_medium"
+        app:fontWeight="500"
+        app:fontStyle="normal" />
+
+    <font
+        android:font="@font/poppins_semibold"
+        android:fontWeight="600"
+        android:fontStyle="normal"
+        app:font="@font/poppins_semibold"
+        app:fontWeight="600"
+        app:fontStyle="normal" />
+
+    <font
+        android:font="@font/poppins_bold"
+        android:fontWeight="700"
+        android:fontStyle="normal"
+        app:font="@font/poppins_bold"
+        app:fontWeight="700"
+        app:fontStyle="normal" />
+
+</font-family>

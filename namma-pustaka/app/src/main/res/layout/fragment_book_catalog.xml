@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_primary"
+        app:elevation="0dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            app:contentScrim="?attr/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:paddingTop="48dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Catalog"
+                    android:textSize="26sp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Discover your next great read"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:textColor="#CCE5DEFF"
+                    android:layout_marginTop="2dp" />
+
+                <!-- Animated Search Bar -->
+                <com.google.android.material.search.SearchBar
+                    android:id="@+id/searchBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/search_books"
+                    android:layout_marginTop="16dp"
+                    style="@style/Widget.Material3.SearchBar" />
+
+                <!-- Filter/Sort Row -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnFilter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:text="@string/filter"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_filter"
+                        app:iconTint="#FFFFFF"
+                        app:backgroundTint="#33FFFFFF"
+                        app:strokeColor="#44FFFFFF"
+                        app:strokeWidth="1dp"
+                        app:cornerRadius="100dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        android:text="@string/sort"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        app:icon="@drawable/ic_sort"
+                        app:iconTint="#FFFFFF"
+                        app:backgroundTint="#33FFFFFF"
+                        app:strokeColor="#44FFFFFF"
+                        app:strokeWidth="1dp"
+                        app:cornerRadius="100dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnToggleView"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_marginStart="8dp"
+                        app:icon="@drawable/ic_grid"
+                        app:iconTint="#FFFFFF"
+                        app:backgroundTint="#33FFFFFF"
+                        app:strokeColor="#44FFFFFF"
+                        app:strokeWidth="1dp"
+                        app:cornerRadius="18dp"
+                        style="@style/Widget.Material3.Button.IconButton"
+                        android:padding="6dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <!-- Category Chips ScrollView (sticky) -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:scrollbars="none"
+            android:background="?attr/colorPrimary"
+            android:paddingVertical="6dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupCategories"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="16dp"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:checked="true"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFiction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fiction"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipScience"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/science"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHistory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/history"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipMaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mathematics"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLiterature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/literature"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipKannada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kannada"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:textColor="#FFFFFF"
+                    app:chipBackgroundColor="@color/chip_catalog_selector" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <!-- Book Grid -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBooks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:padding="8dp"
+        android:clipToPadding="false"
+        android:paddingBottom="88dp" />
+
+    <!-- Shimmer Loading -->
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <include layout="@layout/item_shimmer_book_row" />
+            <include layout="@layout/item_shimmer_book_row" />
+            <include layout="@layout/item_shimmer_book_row" />
+
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <!-- FAB Add Book (Teacher only) -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:contentDescription="Add Book"
+        app:srcCompat="@drawable/ic_add"
+        android:visibility="gone" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,214 @@
+Act as a senior Android architect, Kotlin developer, Firebase engineer, AI integration specialist, and world-class UI/UX designer.
+
+Build a complete production-level Android application called:
+
+“Namma-Pustaka: AI-Powered Smart Rural Library Assistant”
+
+====================================================
+PROJECT VISION
+====================================================
+
+The application is a smart digital library system for rural schools.
+
+The app transforms traditional school libraries into intelligent digital reading ecosystems.
+
+The goals are:
+- Digitize village school libraries
+- Improve reading culture
+- Track book borrowing
+- Help students discover books
+- Help teachers manage books efficiently
+- Encourage literacy through gamification
+- Enable AI-powered summaries and recommendations
+
+====================================================
+CORE PROBLEMS TO SOLVE
+====================================================
+
+1. Rural libraries have no proper digital catalog.
+2. Students do not know available books.
+3. Teachers struggle to track borrowed books.
+4. Books get lost frequently.
+5. Reading culture is weak due to lack of engagement.
+6. No analytics about student reading habits.
+
+====================================================
+TECH STACK
+====================================================
+
+Frontend:
+- Android Native
+- Kotlin
+- XML Layouts
+- Material Design 3
+
+Architecture:
+- MVVM
+- Clean Architecture
+- Repository Pattern
+
+Backend:
+- Firebase Authentication
+- Firebase Firestore
+- Firebase Storage
+- Firebase Cloud Messaging
+
+Database:
+- Room DB + Firestore
+
+AI Features:
+- Gemini API
+- ML Kit QR Scanner
+- AI book recommendation engine
+- AI summaries in Kannada/English
+
+Libraries:
+- Hilt
+- Coroutines
+- Navigation Component
+- RecyclerView
+- Lottie Animations
+- MotionLayout
+
+====================================================
+MAIN MODULES
+====================================================
+
+1. Authentication Module
+- Student Login
+- Teacher/Admin Login
+- Role-based access
+- OTP Authentication
+
+2. Book Catalog Module
+- Search books
+- Category browsing
+- Book cover grid layout
+- Book details page
+- AI-generated summaries
+- Kannada summaries
+- Reading recommendations
+
+3. QR Book Management
+- QR scan to issue books
+- QR scan to return books
+- Book tracking system
+- Borrow history
+
+4. AI Smart Assistant
+- Ask about books
+- Reading suggestions
+- AI chatbot librarian
+- Voice search
+
+5. Review & Rating System
+- Student reviews
+- Ratings
+- Favorite books
+- Reading comments
+
+6. Reading Leaderboard
+- Top readers
+- Monthly rankings
+- Reading streaks
+- Achievement badges
+
+7. Admin/Teacher Dashboard
+- Add books
+- Manage transactions
+- Overdue alerts
+- Reading analytics
+- Student activity reports
+
+8. Notifications
+- Due reminders
+- Return alerts
+- New book announcements
+
+====================================================
+UI/UX REQUIREMENTS
+====================================================
+
+Create an ultra-modern premium UI.
+
+Design style:
+- Digital library aesthetics
+- Educational futuristic theme
+- Soft gradients
+- Animated bookshelves
+- Glassmorphism
+- Dynamic cards
+
+Animations:
+- Book flip animations
+- Floating books
+- Page-turn transitions
+- Smooth search animations
+- Dynamic category transitions
+- AI chatbot animations
+
+Use:
+- MotionLayout
+- Lottie
+- Shared element transitions
+
+====================================================
+SCREENS REQUIRED
+====================================================
+
+1. Splash Screen
+2. Onboarding
+3. Login/Register
+4. Home Dashboard
+5. Book Catalog
+6. Book Details
+7. QR Scanner
+8. Borrowed Books
+9. Reading Leaderboard
+10. AI Librarian Chat
+11. Notifications
+12. Teacher Dashboard
+13. Analytics
+14. Student Profile
+15. Settings
+
+====================================================
+AI FEATURES
+====================================================
+
+1. AI Book Summaries
+2. AI Reading Recommendations
+3. Voice Book Search
+4. AI Librarian Chatbot
+5. Predictive Reading Interest
+
+====================================================
+DATABASE STRUCTURE
+====================================================
+
+Collections:
+- Users
+- Books
+- Transactions
+- Reviews
+- Leaderboards
+- Notifications
+
+====================================================
+GENERATE
+====================================================
+
+Generate:
+- Full Android Kotlin project
+- XML layouts
+- Motion animations
+- Firebase integration
+- Firestore models
+- Repository layer
+- ViewModels
+- AI integrations
+- Material 3 themes
+- Admin dashboard
+- QR scanning implementation
+
+Generate production-level scalable code.

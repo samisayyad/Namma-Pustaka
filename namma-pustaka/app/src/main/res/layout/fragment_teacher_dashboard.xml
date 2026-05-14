@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_gradient_primary"
+        app:elevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="48dp"
+            android:paddingBottom="20dp"
+            android:paddingHorizontal="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teacher Dashboard"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="#FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/tvTeacherName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ms. Kavitha Reddy"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:textColor="#CCE5DEFF" />
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivTeacherAvatar"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_avatar_placeholder"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FFFFFF" />
+
+            </LinearLayout>
+
+            <!-- Stats Grid -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginEnd="6dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginBottom="6dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:src="@drawable/ic_menu_book" app:tint="#FFFFFF" />
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                                <TextView android:id="@+id/tvTotalBooks" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:text="342"
+                                    android:textSize="18sp" android:fontFamily="@font/poppins_bold" android:textColor="#FFFFFF" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="@string/total_books" android:textSize="10sp"
+                                    android:fontFamily="@font/poppins_regular" android:textColor="#CCE5DEFF" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:src="@drawable/ic_people" app:tint="#FFFFFF" />
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                                <TextView android:id="@+id/tvTotalStudents" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:text="86"
+                                    android:textSize="18sp" android:fontFamily="@font/poppins_bold" android:textColor="#FFFFFF" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="@string/total_students" android:textSize="10sp"
+                                    android:fontFamily="@font/poppins_regular" android:textColor="#CCE5DEFF" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="6dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginBottom="6dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:src="@drawable/ic_upload" app:tint="#FFFFFF" />
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                                <TextView android:id="@+id/tvIssuedToday" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:text="14"
+                                    android:textSize="18sp" android:fontFamily="@font/poppins_bold" android:textColor="#FFFFFF" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="@string/books_issued_today" android:textSize="10sp"
+                                    android:fontFamily="@font/poppins_regular" android:textColor="#CCE5DEFF" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        app:cardBackgroundColor="#22FFFFFF"
+                        app:cardCornerRadius="14dp"
+                        app:cardElevation="0dp">
+                        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                            android:orientation="horizontal" android:gravity="center_vertical" android:padding="12dp">
+                            <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                                android:src="@drawable/ic_warning" app:tint="#FFD700" />
+                            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                                android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="8dp">
+                                <TextView android:id="@+id/tvOverdueCount" android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" android:text="3"
+                                    android:textSize="18sp" android:fontFamily="@font/poppins_bold" android:textColor="#FF6B6B" />
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                    android:text="@string/overdue_books" android:textSize="10sp"
+                                    android:fontFamily="@font/poppins_regular" android:textColor="#CCE5DEFF" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="88dp"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Quick Actions -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quick Actions"
+                android:textSize="18sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="?attr/colorOnBackground"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAddBook"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                            android:src="@drawable/ic_add_circle" app:tint="?attr/colorPrimary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Add Book" android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                            android:textColor="?attr/colorOnSurface" android:layout_marginTop="4dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardScanQr"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                            android:src="@drawable/ic_qr_code" app:tint="?attr/colorPrimary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Scan QR" android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                            android:textColor="?attr/colorOnSurface" android:layout_marginTop="4dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardReport"
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:cardBackgroundColor="?attr/colorSurface">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+                        android:orientation="vertical" android:gravity="center" android:padding="8dp">
+                        <ImageView android:layout_width="28dp" android:layout_height="28dp"
+                            android:src="@drawable/ic_analytics" app:tint="?attr/colorPrimary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Analytics" android:textSize="11sp" android:fontFamily="@font/poppins_semibold"
+                            android:textColor="?attr/colorOnSurface" android:layout_marginTop="4dp"
+                            android:textAlignment="center" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <!-- Overdue Alerts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Overdue Alerts" android:textSize="18sp" android:fontFamily="@font/poppins_semibold"
+                    android:textColor="?attr/colorOnBackground" />
+                <TextView android:id="@+id/tvSeeAllOverdue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/see_all" android:textSize="13sp" android:fontFamily="@font/poppins_medium"
+                    android:textColor="?attr/colorPrimary" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvOverdue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+            <!-- Recent Activity -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="12dp">
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                    android:text="Recent Activity" android:textSize="18sp" android:fontFamily="@font/poppins_semibold"
+                    android:textColor="?attr/colorOnBackground" />
+                <TextView android:id="@+id/tvSeeAllActivity" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="@string/see_all" android:textSize="13sp" android:fontFamily="@font/poppins_medium"
+                    android:textColor="?attr/colorPrimary" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRecentActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/fabAddBook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="80dp"
+        android:text="@string/add_book"
+        android:fontFamily="@font/poppins_semibold"
+        app:icon="@drawable/ic_add" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

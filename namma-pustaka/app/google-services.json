@@ -1,0 +1,37 @@
+{
+  "_comment": "PLACEHOLDER — Replace this file with your actual google-services.json from Firebase Console",
+  "_instructions": [
+    "1. Go to https://console.firebase.google.com",
+    "2. Create a new project named 'Namma Pustaka'",
+    "3. Add an Android app with package name: com.nammapustaka",
+    "4. Download google-services.json and replace this file",
+    "5. Enable: Authentication (Email/Password), Firestore, Storage, Cloud Messaging",
+    "6. Set Firestore rules for authenticated users"
+  ],
+  "project_info": {
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "project_id": "namma-pustaka",
+    "storage_bucket": "namma-pustaka.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "YOUR_MOBILESDK_APP_ID",
+        "android_client_info": {
+          "package_name": "com.nammapustaka"
+        }
+      },
+      "api_key": [
+        {
+          "current_key": "YOUR_FIREBASE_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

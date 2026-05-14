@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.NammaPustaka" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Brand Color -->
+        <item name="colorPrimary">@color/md_theme_light_primary</item>
+        <item name="colorOnPrimary">@color/md_theme_light_onPrimary</item>
+        <item name="colorPrimaryContainer">@color/md_theme_light_primaryContainer</item>
+        <item name="colorOnPrimaryContainer">@color/md_theme_light_onPrimaryContainer</item>
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/md_theme_light_secondary</item>
+        <item name="colorOnSecondary">@color/md_theme_light_onSecondary</item>
+        <item name="colorSecondaryContainer">@color/md_theme_light_secondaryContainer</item>
+        <item name="colorOnSecondaryContainer">@color/md_theme_light_onSecondaryContainer</item>
+        <!-- Tertiary Brand Color -->
+        <item name="colorTertiary">@color/md_theme_light_tertiary</item>
+        <item name="colorOnTertiary">@color/md_theme_light_onTertiary</item>
+        <item name="colorTertiaryContainer">@color/md_theme_light_tertiaryContainer</item>
+        <item name="colorOnTertiaryContainer">@color/md_theme_light_onTertiaryContainer</item>
+        <!-- Error Color -->
+        <item name="colorError">@color/md_theme_light_error</item>
+        <item name="colorOnError">@color/md_theme_light_onError</item>
+        <item name="colorErrorContainer">@color/md_theme_light_errorContainer</item>
+        <item name="colorOnErrorContainer">@color/md_theme_light_onErrorContainer</item>
+        <!-- Background/Surface -->
+        <item name="android:colorBackground">@color/md_theme_light_background</item>
+        <item name="colorOnBackground">@color/md_theme_light_onBackground</item>
+        <item name="colorSurface">@color/md_theme_light_surface</item>
+        <item name="colorOnSurface">@color/md_theme_light_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_light_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_light_onSurfaceVariant</item>
+        <!-- Outline -->
+        <item name="colorOutline">@color/md_theme_light_outline</item>
+        <item name="colorOutlineVariant">@color/md_theme_light_outlineVariant</item>
+        <!-- Inverse -->
+        <item name="colorInverseSurface">@color/md_theme_light_inverseSurface</item>
+        <item name="colorInverseOnSurface">@color/md_theme_light_inverseOnSurface</item>
+        <item name="colorInversePrimary">@color/md_theme_light_inversePrimary</item>
+        <!-- Typography -->
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.NammaPustaka.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.NammaPustaka.DisplayMedium</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.NammaPustaka.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.NammaPustaka.TitleMedium</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.NammaPustaka.BodyLarge</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.NammaPustaka.LabelSmall</item>
+        <!-- Shape -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.NammaPustaka.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.NammaPustaka.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.NammaPustaka.Large</item>
+        <!-- Window -->
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <!-- Motion -->
+        <item name="motionLayoutDebugMode">none</item>
+    </style>
+
+    <!-- Splash Theme -->
+    <style name="Theme.NammaPustaka.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/md_theme_light_primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.NammaPustaka</item>
+    </style>
+
+    <!-- Typography Styles -->
+    <style name="TextAppearance.NammaPustaka.DisplayLarge" parent="TextAppearance.Material3.DisplayLarge">
+        <item name="fontFamily">@font/poppins_bold</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+    <style name="TextAppearance.NammaPustaka.DisplayMedium" parent="TextAppearance.Material3.DisplayMedium">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.NammaPustaka.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/poppins_semibold</item>
+    </style>
+    <style name="TextAppearance.NammaPustaka.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/poppins_medium</item>
+    </style>
+    <style name="TextAppearance.NammaPustaka.BodyLarge" parent="TextAppearance.Material3.BodyLarge">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+    <style name="TextAppearance.NammaPustaka.LabelSmall" parent="TextAppearance.Material3.LabelSmall">
+        <item name="fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <!-- Shape Appearances -->
+    <style name="ShapeAppearance.NammaPustaka.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="ShapeAppearance.NammaPustaka.Medium" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">16dp</item>
+    </style>
+    <style name="ShapeAppearance.NammaPustaka.Large" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <!-- Card Style (Glassmorphism base) -->
+    <style name="Widget.NammaPustaka.GlassCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/glass_white</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="strokeColor">@color/glass_white_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+
+    <!-- FAB Style -->
+    <style name="Widget.NammaPustaka.FAB" parent="Widget.Material3.FloatingActionButton.Large">
+        <item name="backgroundTint">@color/md_theme_light_primary</item>
+        <item name="tint">@color/md_theme_light_onPrimary</item>
+    </style>
+
+    <!-- Bottom Nav Style -->
+    <style name="Widget.NammaPustaka.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="backgroundTint">@color/md_theme_light_surface</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="labelVisibilityMode">selected</item>
+    </style>
+
+    <!-- Chat Bubble -->
+    <style name="Widget.NammaPustaka.ChatBubble.User">
+        <item name="android:background">@drawable/bg_chat_user</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">10dp</item>
+    </style>
+    <style name="Widget.NammaPustaka.ChatBubble.AI">
+        <item name="android:background">@drawable/bg_chat_ai</item>
+        <item name="android:paddingHorizontal">16dp</item>
+        <item name="android:paddingVertical">10dp</item>
+    </style>
+
+    <!-- Dialog Style -->
+    <style name="Widget.NammaPustaka.Dialog" parent="ThemeOverlay.Material3.Dialog">
+        <item name="cornerRadius">24dp</item>
+    </style>
+
+    <!-- Search Bar Style -->
+    <style name="Widget.NammaPustaka.SearchBar" parent="Widget.Material3.SearchBar">
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="Widget.NammaPustaka.Chip.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="chipBackgroundColor">@color/chip_bg_color</item>
+        <item name="chipStrokeColor">@color/md_theme_light_outline</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+
+    <style name="Widget.NammaPustaka.TextInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+    </style>
+
+</resources>
